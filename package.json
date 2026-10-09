@@ -1,0 +1,30 @@
+{
+  "name": "aiet-unisphere",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "typecheck": "tsc -b --pretty false",
+    "build": "tsc -b && vite build",
+    "lint": "oxlint",
+    "test": "node tests/ai_assistant.test.mjs && node tests/analytics_ai_contracts.test.mjs && node tests/local_llm_boundary.test.mjs && node tests/external_learning_student.test.mjs && node tests/external_learning_faculty.test.mjs && node tests/external_learning_hod.test.mjs && node tests/external_learning_security.test.mjs",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.112.3",
+    "lucide-react": "^1.31.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "react-router-dom": "^7.18.2"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.3",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.4",
+    "oxlint": "^1.75.0",
+    "typescript": "~6.0.2",
+    "vite": "^8.2.0"
+  }
+}
